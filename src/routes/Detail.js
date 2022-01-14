@@ -14,7 +14,7 @@ class Detail extends React.Component {
         }
         // console.log(location.state);
         // twitter 카드용 메타태그 수정
-        document.querySelector('meta[name="twitter:images"]')?.setAttribute('content', location.state.medium_cover_image)
+        document.querySelector('meta[name="twitter:image"]')?.setAttribute('content', location.state.medium_cover_image)
     }
 
     // render()가 componentDidMount() 보다 먼저 실행되므로 여기도 예외처리 해야함.
