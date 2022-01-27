@@ -1,2 +1,4 @@
-# movie_app
-hello world!
+### Deploy
+```
+npm run deploy
+```
