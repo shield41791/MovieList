@@ -1,5 +1,5 @@
 {
-  "name": "movie_app",
+  "name": "movieList",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -41,5 +41,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://shield41791.github.io/movie_app"
+  "homepage": "https://shield41791.github.io/movieList"
 }
