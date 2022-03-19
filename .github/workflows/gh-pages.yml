@@ -1,9 +1,9 @@
-name: Build and Deploy
+name: Build and Deploy # Github Action 이름
 
 on:
   push:
     branches:
-      - main
+      - main # 빌드할 브랜치
 
 jobs:
   deploy:
@@ -25,10 +25,10 @@ jobs:
             ${{ runner.os }}-node-
 
       - run: npm ci
-      - run: npm run build
+      - run: npm run build # 빌드 스크립트
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./build # 이 폴더에 있는 파일을 배포
